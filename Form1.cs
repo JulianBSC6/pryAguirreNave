@@ -62,8 +62,9 @@ namespace pryAguirreNave
                         {
                             if (j.Bounds.IntersectsWith(i.Bounds))
                             {
-                                this.Controls.Remove(i);
-                                Enemigo();                                
+                                i.Top = -100;
+                                ((PictureBox)j).Image = Properties.Resources.explosion;
+                                                              
                                 Puntos++;
                                 lblPuntaje.Text = Puntos.ToString();
                             }
@@ -97,6 +98,11 @@ namespace pryAguirreNave
             Enemigo();
             Movimiento();
             Puntaje();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

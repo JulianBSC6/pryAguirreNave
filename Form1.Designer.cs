@@ -28,85 +28,84 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            pictureBox1 = new PictureBox();
-            Alien = new PictureBox();
-            timer1 = new System.Windows.Forms.Timer(components);
-            label1 = new Label();
-            lblPuntaje = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Alien).BeginInit();
-            SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Alien = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblPuntaje = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Alien)).BeginInit();
+            this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.Black;
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(388, 351);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(110, 110);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.PreviewKeyDown += pictureBox1_PreviewKeyDown;
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(388, 351);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(110, 110);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Alien
             // 
-            Alien.BackColor = Color.Transparent;
-            Alien.Image = Properties.Resources.alien;
-            Alien.Location = new Point(98, 59);
-            Alien.Name = "Alien";
-            Alien.Size = new Size(49, 44);
-            Alien.SizeMode = PictureBoxSizeMode.StretchImage;
-            Alien.TabIndex = 1;
-            Alien.TabStop = false;
-            Alien.Tag = "Alien";
+            this.Alien.BackColor = System.Drawing.Color.Transparent;
+            this.Alien.Image = global::pryAguirreNave.Properties.Resources.alien;
+            this.Alien.Location = new System.Drawing.Point(98, 59);
+            this.Alien.Name = "Alien";
+            this.Alien.Size = new System.Drawing.Size(49, 44);
+            this.Alien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Alien.TabIndex = 1;
+            this.Alien.TabStop = false;
+            this.Alien.Tag = "Alien";
             // 
             // timer1
             // 
-            timer1.Enabled = true;
-            timer1.Tick += timer1_Tick;
+            this.timer1.Enabled = true;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(7, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 15);
-            label1.TabIndex = 2;
-            label1.Text = "Puntaje:";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 15);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Puntaje:";
             // 
             // lblPuntaje
             // 
-            lblPuntaje.AutoSize = true;
-            lblPuntaje.Location = new Point(63, 9);
-            lblPuntaje.Name = "lblPuntaje";
-            lblPuntaje.Size = new Size(0, 15);
-            lblPuntaje.TabIndex = 3;
+            this.lblPuntaje.AutoSize = true;
+            this.lblPuntaje.Location = new System.Drawing.Point(63, 9);
+            this.lblPuntaje.Name = "lblPuntaje";
+            this.lblPuntaje.Size = new System.Drawing.Size(0, 15);
+            this.lblPuntaje.TabIndex = 3;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
-            ClientSize = new Size(884, 461);
-            Controls.Add(lblPuntaje);
-            Controls.Add(label1);
-            Controls.Add(Alien);
-            Controls.Add(pictureBox1);
-            ForeColor = Color.Transparent;
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
-            KeyPress += Form1_KeyPress;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Alien).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(884, 461);
+            this.Controls.Add(this.lblPuntaje);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Alien);
+            this.Controls.Add(this.pictureBox1);
+            this.ForeColor = System.Drawing.Color.Transparent;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Alien)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
